@@ -1,0 +1,35 @@
+# rConfig connection template - DO NOT EDIT DIRECTLY
+#
+# Config your device 
+# Main Prompt 
+# hostname>
+#Enable Prompt 
+# hostname#
+
+main:
+  name: "TP-Link SG3210 - SSH - Enable"
+  desc: "TP-Link SG3210 SSH connection with enable mode"
+
+connect:
+  timeout: 30
+  protocol: ssh
+  port: 22
+
+auth:
+  username: "Username:"
+  password: "Password:"
+  enable: on
+  enableCmd: "enable\r"
+  enablePassPrmpt: ""
+  hpAnyKeyStatus: off
+  hpAnyKeyPrmpt: "Press any key to continue"
+
+config:
+  linebreak: "r"
+  paging: on
+  pagingCmd: "terminal length 0\r"
+  resetPagingCmd: "terminal length 40"
+  pagerPrompt: ""
+  pagerPromptCmd: ""
+  saveConfig: ""
+  exitCmd: "exit"
