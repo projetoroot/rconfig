@@ -1,0 +1,50 @@
+# rConfig connection template - DO NOT EDIT DIRECTLY
+#
+# Config your device 
+#Main Prompt 
+#:~#
+#Enable Prompt 
+#:~#
+
+main:
+  name: "linux_ssh"
+  desc: "Template para Linux SSH para qualquer distro"
+
+connect:
+  protocol: "ssh"
+  port: 22
+  timeout: 30
+  isNonInteractiveMode: "off"
+
+auth:
+  username: ""
+  password: ""
+  enable: "off"
+  enableCmd: ""
+  enableUsername: "off"
+  enableUsernamePrmpt: ""
+  enablePassPrmpt: ""
+  hpAnyKeyStatus: "off"
+  sshInteractive: "off"
+
+config:
+  paging: "off"
+  pagingCmd: ""
+  resetPagingCmd: ""
+  saveConfig: "off"
+  exitCmd: ""
+  isMikrotik: "off"
+
+options:
+  AnsiHost: "off"
+  setWindowSize: [80, 24]
+  setTerminalDimensions: "80x24"
+
+vt100:
+  hasSplashScreen: "off"
+  hasSplashScreenEnterKey: "off"
+  splashScreenReadToText: ""
+  splashScreenSendControlCode: ""
+
+deviceparams:
+  device_port_override: 22
